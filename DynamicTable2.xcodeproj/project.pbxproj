@@ -13,6 +13,8 @@
 		9807B627195CCC9C00763FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9807B625195CCC9C00763FD1 /* Main.storyboard */; };
 		9807B629195CCC9C00763FD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9807B628195CCC9C00763FD1 /* Images.xcassets */; };
 		9807B635195CCC9C00763FD1 /* DynamicTable2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9807B634195CCC9C00763FD1 /* DynamicTable2Tests.m */; };
+		9807B640195CCCBD00763FD1 /* DynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9807B63F195CCCBD00763FD1 /* DynamicCell.m */; };
+		9807B646195CD52400763FD1 /* DynamicCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9807B645195CD52400763FD1 /* DynamicCell2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 		9807B62E195CCC9C00763FD1 /* DynamicTable2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicTable2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9807B633195CCC9C00763FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9807B634195CCC9C00763FD1 /* DynamicTable2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicTable2Tests.m; sourceTree = "<group>"; };
+		9807B63E195CCCBD00763FD1 /* DynamicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicCell.h; sourceTree = "<group>"; };
+		9807B63F195CCCBD00763FD1 /* DynamicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicCell.m; sourceTree = "<group>"; };
+		9807B644195CD52400763FD1 /* DynamicCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicCell2.h; sourceTree = "<group>"; };
+		9807B645195CD52400763FD1 /* DynamicCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicCell2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 				9807B620195CCC9C00763FD1 /* AppDelegate.m */,
 				9807B622195CCC9C00763FD1 /* ViewController.h */,
 				9807B623195CCC9C00763FD1 /* ViewController.m */,
+				9807B63E195CCCBD00763FD1 /* DynamicCell.h */,
+				9807B63F195CCCBD00763FD1 /* DynamicCell.m */,
+				9807B644195CD52400763FD1 /* DynamicCell2.h */,
+				9807B645195CD52400763FD1 /* DynamicCell2.m */,
 				9807B625195CCC9C00763FD1 /* Main.storyboard */,
 				9807B628195CCC9C00763FD1 /* Images.xcassets */,
 				9807B61B195CCC9C00763FD1 /* Supporting Files */,
@@ -215,7 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9807B646195CD52400763FD1 /* DynamicCell2.m in Sources */,
 				9807B624195CCC9C00763FD1 /* ViewController.m in Sources */,
+				9807B640195CCCBD00763FD1 /* DynamicCell.m in Sources */,
 				9807B621195CCC9C00763FD1 /* AppDelegate.m in Sources */,
 				9807B61E195CCC9C00763FD1 /* main.m in Sources */,
 			);

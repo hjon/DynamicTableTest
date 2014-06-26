@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DynamicCell.h
 //  DynamicTable2
 //
 //  Created by Jon Hjelle on 6/26/14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
+@interface DynamicCell : UITableViewCell
 
+@property (nonatomic, strong) UILabel* headlineLabel;
 
 @end
-

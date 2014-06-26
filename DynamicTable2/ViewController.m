@@ -7,22 +7,41 @@
 //
 
 #import "ViewController.h"
+#import "DynamicCell.h"
+#import "DynamicCell2.h"
 
 @interface ViewController ()
-            
+
+@property (nonatomic, weak) IBOutlet UITableView* tableView;
 
 @end
+
+
+#define USE_CODE 0
 
 @implementation ViewController
             
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+#if USE_CODE
+    [self.tableView registerClass:[DynamicCell class] forCellReuseIdentifier:@"cell"];
+#endif
+    self.tableView.estimatedRowHeight = 44.0;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 20;
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+#if USE_CODE
+    DynamicCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+#else
+    DynamicCell2* cell = [tableView dequeueReusableCellWithIdentifier:@"cell2"];
+#endif
+    cell.headlineLabel.text = @"Testing";
+    return cell;
 }
 
 @end
