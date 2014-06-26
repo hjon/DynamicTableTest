@@ -15,9 +15,9 @@ I recreated the demo from Session 226 (with some modifications), with constraint
 Will attempt to recover by breaking constraint 
 <NSLayoutConstraint:0xb839ff0 H:[UILabel:0xb8398f0'Testing']-(20)-|   (Names: '|':UITableViewCellContentView:0xb839850 )>
 
-```
 Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.
 The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKit/UIView.h> may also be helpful.
+```
 
 As far as I can tell, the constraints are the same, regardless of how I created them. However, it seems that doing this in Interface Builder doesn't work.
 
