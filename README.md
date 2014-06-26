@@ -1,7 +1,7 @@
 DynamicTableTest
 ================
 
-I recreated the demo from Session 226 (with some modifications), with constraints created in code and in Interface Builder. The constraints set in code work, as expected, but when I make the custom cell and set the constraints in Interface Builder, I get the following:
+I recreated the demo from [Session 226](https://developer.apple.com/videos/wwdc/2014/?id=226) (with some modifications), with constraints created in code and in Interface Builder. The constraints set in code work, as expected, but when I make the custom cell and set the constraints in Interface Builder, I get the following:
 
 ```
 2014-06-26 15:56:30.342 DynamicTable2[28371:1865072] Unable to simultaneously satisfy constraints.
